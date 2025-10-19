@@ -1,0 +1,254 @@
+/* ---------- RESET ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* ---------- HEADER ---------- */
+.header__logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.nav__link--active {
+  border-bottom: 2px solid #C73419;
+  padding-bottom: 4px;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.hero__item {
+  position: relative;
+  color: #111;
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 6px solid #fff;
+  box-sizing: border-box;
+}
+
+/* ---------- FONDOS E IMÁGENES ---------- */
+.hero__item--women {
+  background-color: #FAE1D8;
+  background-image: url("../Imagenes/Mujer 2.png");
+  background-repeat: no-repeat;
+  background-position: right -140px bottom;
+  background-size: 1250px;
+  height: 640px;
+  border-bottom: none;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__item--men {
+  background-color: #BEDFD6;
+  background-image: url("../Imagenes/Imagen hombre.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: none;
+  justify-content: center;
+  align-items: center; /* 🔹 centra el texto */
+  text-align: center;
+}
+
+.hero__item--kids {
+  background-color: #D8C9EC;
+  background-image: url("../Imagenes/Kids fashion.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__item--cosmetics {
+  background-color: #F6D8D5;
+  background-image: url("../Imagenes/Cosmeticos.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__item--accessories {
+  background-color: #D1DBF0;
+  background-image: url("../Imagenes/Accesorios.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---------- AJUSTES DE REJILLA ---------- */
+.hero .row {
+  margin: 0;
+  padding: 0;
+}
+
+.hero .row > .col-lg-6,
+.hero .row > .col-md-6 {
+  padding: 0;
+}
+
+/* ---------- ELIMINA LA LÍNEA BLANCA ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.hero > .container-fluid,
+.hero > .container,
+.hero .row {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.hero__item:last-child {
+  margin-bottom: -6px !important;
+  border-bottom: none !important;
+}
+
+* {
+  outline: none;
+  border-collapse: collapse;
+}
+
+/* ---------- TEXTO Y BOTÓN ---------- */
+.hero__content {
+  max-width: 420px;
+}
+
+.hero__title {
+  font-family: 'Allura', cursive;
+  font-size: 72px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  color: #6B6E75;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero__btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+/* 🔹 Línea roja más corta y centrada */
+.hero__btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 25%;
+  height: 2px;
+  background-color: #C73419;
+  transition: width 0.3s ease;
+}
+
+.hero__btn:hover::after {
+  width: 100%;
+}
+
+.hero__btn:hover {
+  color: #C73419;
+}
+
+/* ---------- TÍTULOS SECUNDARIOS ---------- */
+.hero__item h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.hero__item p {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1200px) {
+  .hero__item--women {
+    background-size: 950px;
+    background-position: right -100px bottom;
+    height: 560px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__item {
+    height: 300px;
+    text-align: center;
+    background-position: center;
+  }
+
+  .hero__title {
+    font-size: 52px;
+  }
+
+  .hero__item--women {
+    background-size: 500px;
+    background-position: center bottom;
+    height: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__item {
+    height: 250px;
+  }
+
+  .hero__item--women {
+    height: 400px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero__text {
+    display: none;
+  }
+
+  .hero__item h3 {
+    font-size: 22px;
+  }
+}
